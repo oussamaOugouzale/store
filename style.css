@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.logo {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/* TODO: Complétez les styles pour la barre de navigation supérieure */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(171, 171, 171);
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+
+
+
+
+
+}
+
+#grid, #list{
+    cursor: pointer;
+}
+
+nav div span {
+    padding-right: 20px;
+}
+
+
+.content {
+    margin-top: 20px;
+}
+
+/* TODO: Complétez les styles pour la barre de filtrage */
+.filter-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+/* TODO: Complétez les styles pour la zone de contenu des produits */
+.product-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(248px, 1fr));
+    gap: 20px;
+}
+
+.product-content-list{
+    
+}
+
+
+/* TODO: Complétez les styles pour les cartes de produits */
+.product-card {
+    border: 1px solid rgb(255, 32, 32);
+    padding: 13px;
+    display: grid;
+    grid-template-rows: 2fr 0.5fr 2fr;
+    border-radius: 3.5px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Style pour l'image du produit */
+.product-card img {
+    width: 16rem;
+    height: 13rem;
+    border: 1px solid gray;
+    border-radius: 1px;
+    background-color: rgb(157, 157, 157);
+
+
+
+
+
+}
+
+/* Style pour les informations du produit */
+.product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+}
+
+.product-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+    align-self: flex-end;
+}
+
+
+
+/* Style pour le bouton d'ajout au panier */
+.product-card button {
+    width: 30px;
+    padding: 10px;
+    background-color: #6F4E37;
+    /* Couleur café */
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: auto;
+    /* Pousse le bouton vers le bas */
+    align-self: center;
+}
+
+.product-card button:hover {
+    background-color: #5D4037;
+    /* Couleur café plus foncée au survol */
+}
+
+
+
+/*CSS pour le formulaire de recherche*/
+.search-container {
+    margin-bottom: 20px;
+}
+
+#search-form {
+    display: flex;
+    gap: 10px;
+}
+
+#search-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#search-form button {
+    padding: 10px 20px;
+    background-color: #6F4E37;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#search-form button:hover {
+    background-color: #5D4037;
+}
+
+
+
+.product-content.list-view {
+    display: block;
+}
+
+.product-content.list-view .product-card {
+    display: grid;
+    grid-template-columns: 2fr 2fr 7fr;
+    gap: 14px;
+    margin-bottom: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 16rem;
+}
+
+.product-content.list-view .product-card img {
+    width: 220px;
+    background-color: rgb(156, 156, 156);
+    border-radius: 3px;
+}
+
+.product-content.list-view .product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 17px;
+    height: 77%;
+}
+.product-content.list-view .product-info button{
+}
+
+/* 
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #644c41;
+ */
+
+
+
+ 
